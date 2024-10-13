@@ -2,15 +2,20 @@ spring:
   application:
     name: cadastro-servicos
   datasource:
-    url: jdbc:h2:mem:servicesdb
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-  h2:
-    console:
-      enabled: true  # Permitir acesso à console H2
+    url: jdbc:mysql://localhost:3306/lanservices
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    url: jdbc:h2:mem:servicesdb
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#  h2:
+#    console:
+#      enabled: true  # Permitir acesso ï¿½ console H2
 
   jpa:
     hibernate:
       ddl-auto: update  # Atualizar automaticamente o schema do banco de dados
     show-sql: true  # Exibir as queries SQL no console
+    database-platform: org.hibernate.dialect.MySQL8Dialect

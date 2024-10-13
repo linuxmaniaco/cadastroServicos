@@ -1,1 +1,1 @@
-INSERT INTO USER(nome, email, telefone, endereco, login, senha) VALUES ('eduardo','linuxmaniaco@gmail.com','21994519731', 'rua um 20','edu','123');
+INSERT INTO USERS(nome, email, telefone, endereco, login, senha) VALUES ('eduardo','linuxmaniaco@gmail.com','21994519731', 'rua um 20','edu','123');
